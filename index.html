@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="author" content="Kira Liang" />
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -48,6 +48,17 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- INclude Blog file -->
+	<!--script>
+    $(function(){
+      $("#includedContent").load("blog.html");
+    });
+	</script-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="js/load-more-button.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/load-more-button.js"></script>
 
 	</head>
 	<body>
@@ -56,12 +67,12 @@
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<div class="author-img" style="background-image: url(images/home/profile_pic.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Kira Liang</a></h1>
 				<span class="position"><a href="#">Data Scientist</a> From Taiwan</span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
+				<div id="navbar" class="collapse" style="font-size:600px;">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
@@ -76,18 +87,21 @@
 				</div>
 			</nav>
 
-			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang's personal website created by<i class="icon-heart" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.  </span> <span>Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>-->
-				<ul>
-					<!--<li><a href="#"><i class="icon-facebook2"></i></a></li>
+				<!--<div class="colorlib-footer">
+				<p><small>&copy; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang's personal website
+</small></p>
+Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+</span> <span>Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span>
+<span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
+					<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li> -->
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/kira-liang-2a4a13139/"><img alt="LinkedIn Logo" src="images/LI-Logo.png"
-         width="50" height="15"></a></li>
+         width="15" height="15"></a></li>
 				</ul>
-			</div>
+			</div>-->
 
 		</aside>
 
@@ -95,7 +109,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   	<li style="background-image: url(images/home/img_bg_3.jpeg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -110,7 +124,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   	<li style="background-image: url(images/home/img_bg_2.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -140,7 +154,9 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 									<div class="about-desc">
 										<span class="heading-meta">About Me</span>
 										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Kira Liang</strong> I graduated from the University of Amsterdam with a master degree in Data Science. I am knowledgeable with machine learning, big data platform (AWS, Hadoop) and analytics tools (python,R). I have several hands-on experiences in solving business problems across multiple domains using data analytics.</p>
+										<p><strong>Hi I'm Kira Liang</strong> I am a data scientist from Taiwan, currently living in the Netherlands. I have a passion for data and several hands-on experiences in solving business problems across multiple domains.
+											During my academic training and working experience, I have been a specialist at managing complex raw datasets and transferred them into valuable insights to achieve objectives.
+											Also I enjoy working in a team, I believe you can learn faster and much more. </p>
 										<p></p>
 									</div>
 								</div>
@@ -182,7 +198,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 						</div>
 					</div>
 				</div>
-				<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/about/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 					<div class="overlay"></div>
 					<div class="colorlib-narrow-content">
 						<div class="row">
@@ -297,7 +313,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+							<h2 class="colorlib-heading">These are some of my expertise</h2>
 						</div>
 					</div>
 					<div class="row row-pt-md">
@@ -308,7 +324,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Data Analytics</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -319,7 +335,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Data Mining</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -330,7 +346,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Machine Learning</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -341,7 +357,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Natural Language Processing</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -352,7 +368,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Information Retrieval</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -363,7 +379,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</span>
 								<div class="desc">
 									<h3>Big Data</h3>
-									<p>Add text</p>
+									<!--<p>Add text</p>-->
 								</div>
 							</div>
 						</div>
@@ -378,7 +394,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					</div> -->
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p> Add some describtion of skill in this part</p>
+							<!--<p> Add some describtion of skill in this part</p>-->
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
@@ -477,7 +493,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 															</p>
 													<ul>
 												      <li>Translate scientific, societal and business challenges into data related solutions</li>
-															<li>Add text</li>
+															<li>Machine learning and deep learning techniques</li>
+															<li>Big data cloud application</li>
 													</ul>
 											    </div>
 
@@ -499,8 +516,10 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
                                   <br><span class="icon"><i class="icon-location"></i> Taiwan </span>
 															</p>
 												  <ul>
-													    <li>Add text</li>
-													    <li>Add text</li>
+													    <li>Data analytics application: </li>
+													    <li>Programming in Java, R, python</li>
+															<li>Big Data framework(Hadoop ecosystem)</li>
+															<li>Relational and non-relational database applications (SQL server & MongoDB)</li>
 												  </ul>
 									        </div>
 									    </div>
@@ -519,8 +538,9 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 																	<br><span class="icon"><i class="icon-location"></i> Taiwan </span>
 															</p>
 													<ul>
-														    <li>Add text</li>
-																<li>Add text</li>
+														    <li>Micro/macro economics</li>
+																<li>Statistics</li>
+																<li>Financial management</li>
 													</ul>
 
 									        </div>
@@ -542,7 +562,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInBottomScientist">
 					            <div class="timeline-entry-inner">
 
 					               <div class="timeline-icon color-1">
@@ -550,59 +570,64 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					               </div>
 
 					               <div class="timeline-label">
-					                  <h2><a href="#">NLP Intern</a> <span>2019/4 - 2019/6  </span><span class="icon"><i class="icon-location"></i> Elsevier </span></h2>
+					                  <h2><a href="#">Data analyst</a> <span>2020/3 - Current</span><span class="icon"><i class="icon-location"></i> Zivver </span></h2>
                             <ul>
-														    <li>Add text</li>
-																<li>Add text</li>
+														    <li>Create ELT data pipeline for commercial data</li>
+																<li>Conduct statistical modeling to facilitate business decisions</li>
+																<li>Provide actionable insights, recommendations to the sales and marketing teams.</li>
 														</ul>
 					               </div>
 					            </div>
 					         </article>
 
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInBottomfadeInBottomScientist">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-2">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Data Analyat</a> <span>2018/4 - 2018/8 </span><span class="icon"><i class="icon-location"></i> Digiwin Software Co.,Ltd. </span></h2>
+					               	<h2><a href="#">Machine learning specialist intern</a> <span>2019/4 - 2019/6 </span><span class="icon"><i class="icon-location"></i>Elsevier</span></h2>
                           <ul>
-													    <li>Add text</li>
-													    <li>Add text</li>
+													    <li>Developed a deep learning model (BERT: Deep Bidirectional Transformers) that utilized text features from raw noisy abstract and title to correctly classify multi-labeled scientific articles</li>
+													    <li>Outperformed the baseline model at 39% with respect to accuracy</li>
 													</ul>
 					               </div>
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInBottomfadeInBottomfadeInBottomScientist">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-3">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Data Scientist</a> <span>2017/4 - 2018/3 </span><span class="icon"><i class="icon-location"></i> ProphetStor Data Services, Inc </span></h2>
+					               	<h2><a href="#">Data Scientist</a> <span>2018/4 - 2018/8 </span><span class="icon"><i class="icon-location"></i>Digiwin Software Co., Ltd.</span></h2>
 													<ul>
-													    <li>Add text</li>
-													    <li>Add text</li>
+													    <li>Developed insightful metrics, dashboards, reports and insights for the executive team</li>
+													    <li>Prediction of retirement: Quantified retirement reasons, reduced employee turnover rate by 12% and reduced business operation cost by 22%</li>
+															<li>Product sales forecast: Gauged product demand and increased inventory turnover rate by 15%</li>
 													</ul>
 					               </div>
 					            </div>
 					         </article>
 
-					         <!--<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-4">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               	<h2><a href="#">Data Scientist</a> <span>2017/4 - 2018/3 </span><span class="icon"><i class="icon-location"></i> ProphetStor Data Services, Inc </span></h2>
+													<ul>
+													    <li>Developed conversational flows for chatbots</li>
+													    <li>Created data pipelining to using the chat conversations to train the AI Bot</li>
+													</ul>
 					               </div>
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					        <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-5">
 					                  <i class="icon-pen2"></i>
@@ -614,7 +639,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					            </div>
 					         </article>-->
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottomfadeInBottomfadeInBottomScientist">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
@@ -744,44 +769,60 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading">Recent Blog</h2>
+							<h2 class="colorlib-heading">Projects</h2>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="row flex">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInDown">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="images/blog/bert/Thesis.pdf" class="blog-img"><img src="images/blog/bert/cover_bg.png" class="img-responsive"></a>
 								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Renovating National Gallery</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<span><small></small> | <small> NLP, Machine learning, Deep learning </small> | </span>
+									<h3><a href="images/blog/bert/Thesis.pdf" class="blog-img">Multilabeled text classification with BERT</a></h3>
+									<p>Text classification is a common task in Natural Languge Processing (NLP), in this research I compared BERT, a popular Transformer model and other classical models on scientific contents.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInDown">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="images/blog/crime/crime_prediction.pdf" class="blog-img"><img src="images/blog/crime/crime-bg.jpeg" class="img-responsive" ></a>
 								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<span><small></small> | <small>Analytics, prediction modeling </small> | </span>
+									<h3><a href="images/blog/crime/crime_prediction.pdf">Theft crime prediction based on spatial and temporal crime hotpots</a></h3>
+									<p>This study aims to find the spatial and temporal theft hotspots in Taipei city by analyzing real-
+world theft datasets through a statistical analysis and the utility of hotspot mapping. </p>
+								</div>
+							</di>
+						</div>
+					</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInDown">
+							<div class="blog-entry">
+								<a href="images/blog/quora/quora.pdf" class="blog-img"><img src="images/blog/quora/quora-bg.png" class="img-responsive" ></a>
+								<div class="desc">
+									<span><small></small> | <small>NLP, Machine learning, Deep learning </small> | </span>
+									<h3><a href="images/blog/quora/quora.pdf">Identify duplicated question pairs for Quora</a></h3>
+									<p>Can we identify the intent of a question even if they are phrase differently? In this project, we trained more than 300k question pairs from quora and identify if they are duplicated.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<!--<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInDown" style="display: none;">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="blog.html" class="blog-img"><img src="images/blog/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<span><small>April 14, 2018 </small> | <small> Load more </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
 									<h3><a href="blog.html">Make website from scratch</a></h3>
 									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+							<div id="loadMore" class="btn btn-primary btn-learn">
+                <a href="#">Load More</a>
+							</div>
+							<!--<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more</a></p> -->
+
 						</div>
 					</div>
 				</div>
@@ -824,7 +865,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</div>
 							</div>
 						</div>
-						<div class="col-md-7 col-md-push-1">
+
+						<!--<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 									<form action="">
@@ -847,7 +889,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> Kira Liang'
 								</div>
 
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
