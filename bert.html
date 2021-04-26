@@ -75,11 +75,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1 style="color:white" >Multilabeled text classification with BERT</h1>
+            <h1 style="color:white" >Multi-label text classification with BERT</h1>
             <!-- <h2 class="meta" style="color:white" >How can we predict more than one labels using BERT?</h2> -->
-						<span class="meta">Posted by
-							<a href="#">Kira</a>
-							in June, 2019</span>
+						<span class="meta">Posted by Kira</span>
+						<span class="meta"> Keywords <small> NLP, Machine learning, Deep learning </small></span>
           </div>
         </div>
       </div>
@@ -93,47 +92,91 @@
         <div class="col-lg-8 mx-auto center-block">
 
 
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>In Natural Language Processing (NLP), using word embeddings as input for training classifiers has become more common over the past decade.
+						Training on a lager corpus and more complex models has become easier with the progress of machine learning techniques. However,
+						these robust techniques do have their limitations while modeling for ambiguous lexical meaning.</p>
+          <p>In order to capture multiple meanings of words, several contextual word embeddings methods have emerged and shown significant improvements
+						on a wide rage of downstream tasks such as question answering, machine translation, text classification and named entity recognition.</p>
+					<p>This study focuses on the comparison of classical models which use static representations and contextual embeddings which implement dynamic
+						representations by evaluating their performance on multi-labeled text classification of scientific articles.</p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
 
-          <p>What was most significant about the lunar voyahomege was not that man set foot on the Moon but that they set eye on the earth.</p>
+          <h2 class="section-heading">What is Multi-label classification</h2>
+          <p>In general, the classification task in machine learning aims to explore knowledge that can be used to predict the unknown class of an instance
+						based on the features of the input instances. A classification problem can be categorized into two groups: single-label classification and multi-label classification.</p>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <p>Single classification tasks concerned with learning from a set of examples that are associated with a single label from a set of disjoint labels.
+						In multi-label classification, the examples can be associated with two or more concept labels.</p>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+					<p>Over the past years, multi-label classification tasks appears in a wide range of real-world situations and applications, and the existing multi-label
+						classification methods can be grouped into three categories: a) problem transformation methods, b) algorithm adaptation methods and c) Ensemble methods.</p>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p>Problem transformation methods transform the multi-label classification problem into either one or more single-label classification or regression problems,
+						and an algorithm adaptation approach aims to extend specific learning algorithms in order to handle multi-label data directly without requiring any preprocessing.
+						The ensemble based multi-label classifiers are developed on top of the problem transformation and algorithm adaptation methods.</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <h2 class="section-heading">What is BERT</h2>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>Before we dive into BERT model, let's talk about the contextualized word embeddings and why do we need it.</p>
 
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+					<p>In the distributed word representation, each word type is projected as a single point in the semantic space no matter which content it appears in.
+						However, in the real world, words tend to have different meanings in different contexts. <strong>Capturing the multiple meanings of a word and conflates all the meaning
+						into one single vector has become the biggest limitation in word embedding learning. </strong> </p>
 
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+					<p>In order to adapt to dynamic polysemy language model, contextualized word embedding has emerged to analyze the context of the target word and generate its dynamic embedding.</p>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <p>One of the latest milestones for contextual word embedding is the release of BERT, a deep bidirectional transformer model released by Google. BERT builds upon several robust
+						pre-training contextual embeddings including Semi-supervised Sequence Learning, Generative Pre-Training, <a href="https://arxiv.org/abs/1802.05365">ELMo</a>, and <a href="https://arxiv.org/abs/1801.06146">ULMFit</a>.</p>
 
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+         <p>Unlike these previous models, which looked at a text sequence either from left to right or combined left-to-right and right-to-left, BERT proposed a
+					 new language modeling method called Masked language modeling to achieve the deep bidirectional training. </p>
 
-          <a href="#">
-            <img class="img-fluid" src="images/blog/bert/cover_bg.png" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+          <img class="center" src="images/blog/bert/architecture.png" style="width:800px;height:250px;">
+          <span class="caption text-muted">Architecture of the BERT, OpenAI and ELMo on a high level</span>
 
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+					<p>The arrows indicate the information flow from one layer to the next. The green boxes at the top indicate the final contextualized representation of each input word.
+             It’s evident from the above image: BERT is bi-directional, GPT is unidirectional (information flows only from left-to-right), and ELMO is shallowly bidirectional.</p>
 
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+          <h2 class="section-heading">Experiments on 10 different models: Classical v.s. BERT</h2>
+
+					<p> I designed 10 different experiments and used different embedding methods to train a classifier. The results demonstrate that contextual word embeddings have
+						outperformed the distributed word embeddings. Furthermore, the model that was fine-tuned on a scientific corpus (SciBERT) has achieved better results than the
+						one fine-tuned on general domain collections or other models that use pretrained embeddings.
+
+
+
+	            <img class="img-fluid" src="images/blog/bert/result.png" style="width:800px;height:500px;">
+	          <span class="caption text-muted">Measurements of prediction quality on test data using different embedding</span>
+
+         <p>In the first experiment, I built the Tf-idf model to compare the performance between the count-based method and the word embedding method.
+					 The result shows that tf-idf performs worse than most of the embedding methods. Tf-idf is an improved version of bag-of-words model and it does not capture the
+					 semantic meaning and the position of words. </p>
+
+					<p>Word2vec, fastText and BERT provide pretrained embeddings that were trained on a general domain. The results indicate that Word2vec has the best result compared
+						to fastText and BERT among pretrained embeddings. In this case, using the fastText classifier with a pretrained embedding performed worse than the tf-idf method. </p>
+
+					<p>I also trained word2vec, fastText and BERT using our own dataset. The word2vec models were trained using two architectures: skipgram and CBOW. The fastText model was
+						trained using skipgram and we fine-tuned the BERT model in an unsupervised way to learn the new embeddings. The word2vec skipgram model obtained the best result
+						in this classification task and fastText with the pretrained embedding performed the worse.</p>
+
+          <p>In the pretrained embeddings experiments, not only the model ar- chitectures are distinct, but also the dataset used is different. On the other hand, training BERT
+						from scratch is not realistic due to the limitation of time and computation power, hence BERT can only be fine-tuned on the general domain dataset.</p>
+
+
+         <h2 class="section-heading">Conclusion</h2>
+
+				 <p>In this study, I generated a training dataset consisting of the title and abstract of scientific articles that can be used as input to a logistic regression classifier.
+					 I conducted experiments with different embeddings including tf-idf, word2vec, fastText and BERT. The performances of the models are then evaluated using various evaluation metrics.
+					 The results show that the classical embeddings outperformed unsupervised contextual embeddings in the classification task, and training a model on a corpus of the scientific
+					 domain improves the accuracy score. The research also shown that the classification task can be improved significantly by training supervised contextual embeddings. </p>
+
+					<p>Like to check out more details? Please click the button below</p>
 						<p ><a class="btn btn-primary btn-learn center-block" href="images/blog/bert/Thesis.pdf" download>Download research<i class="icon-download4"></i></a></p>
 						<br>
 						<br>
 
-					<p style="text-align:center; font-size:30px"> Go back <a class="nav-link" href="index.html" style="background-color: #80ced6">Home</a> </p>
+					<p style="text-align:center; font-size:30px"> Go back <a class="nav-link" href="index.html" data-nav-section="blog" style="background-color: #80ced6">Home</a></p>
         </div>
       </div>
     </div>
@@ -141,43 +184,47 @@
 
 
 <section class="colorlib-blog" data-section="blog">
+
 	<div class="colorlib-narrow-content">
 			<div class="col-md-4 col-sm-6 ">
 				<div class="blog-entry">
-					<a href="bert_2.html" class="blog-img"><img src="images/blog/blog-1.jpg" class="img-responsive" style="width:400px;height:240px;"></a>
+					<a href="images/blog/crime/crime_prediction.pdf" class="blog-img"><img src="images/blog/crime/crime-bg.jpeg" class="img-responsive" style="width:400px;height:240px;"></a>
 					<div class="desc">
-						<span><small>April 14, 2018 </small> | <small> After laod more </small> </span>
-						<h3><a href="bert_2.html">Make website from scratch</a></h3>
-						<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						<span><small></small> | <small>Analytics, prediction modeling </small> | </span>
+						<h3><a href="images/blog/crime/crime_prediction.pdf">Theft crime prediction based on spatial and temporal crime hotpots</a></h3>
+						<p>This study aims to find the spatial and temporal theft hotspots in Taipei city by analyzing real-
+								world theft datasets through a statistical analysis and the utility of hotspot mapping. </p>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="colorlib-narrow-content">
-				<div class="col-md-4 col-sm-6 ">
-					<div class="blog-entry">
-						<a href="bert_2.html" class="blog-img"><img src="images/blog/blog-2.jpg" class="img-responsive" style="width:400px;height:240px;"></a>
-						<div class="desc">
-							<span><small>April 14, 2018 </small> | <small> After load more </small> </span>
-							<h3><a href="bert_2.html">Make website from scratch</a></h3>
-							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="colorlib-narrow-content">
-					<div class="col-md-4 col-sm-6 ">
-						<div class="blog-entry">
-							<a href="bert_2.html" class="blog-img"><img src="images/blog/blog-3.jpg" class="img-responsive" style="width:400px;height:240px;"></a>
-							<div class="desc">
-								<span><small>April 14, 2018 </small> | <small> After load more </small> </span>
-								<h3><a href="bert_2.html">Make website from scratch</a></h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+	     </div>
+     </div>
+	</div>
 
+	<div class="colorlib-narrow-content">
+			<div class="col-md-4 col-sm-6 ">
+				<div class="blog-entry">
+					<a href="images/blog/quora/quora.pdf" class="blog-img"><img src="images/blog/quora/quora-bg.png" class="img-responsive" style="width:400px;height:240px;"></a>
+					<div class="desc">
+						<span><small></small> | <small>NLP, Machine learning, Deep learning </small> | </span>
+						<h3><a href="images/blog/quora/quora.pdf">Identify duplicated question pairs for Quora</a></h3>
+						<p>Can we identify the intent of a question even if they are phrase differently? In this project, we trained more than 300k question pairs from quora and identify if they are duplicated.</p>
+					</div>
+		    </div>
+	    </div>
+	</div>
+
+
+	<div class="colorlib-narrow-content">
+			<div class="col-md-4 col-sm-6 ">
+				<div class="blog-entry">
+					<a href="images/blog/search_engine/search_engine.pdf" class="blog-img"><img src="images/blog/search_engine/cover_bg.png" class="img-responsive" style="width:400px;height:240px;"></a>
+					<div class="desc">
+						<span><small></small> | <small>Web scrapping, Information retrieval</small> | </span>
+						<h3><a href="images/blog/search_engine/search_engine.pdf">Create a search engine yourself</a></h3>
+						<p>How does a search engine work? Let’s find out – by building one!</p>
+					</div>
+		    </div>
+	    </div>
+	</div>
 </section>
 
   <!-- Footer -->
