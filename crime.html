@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Crime prediction: Theft crime prediction based on spatial and temporal crime hotpots</title>
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kira's blog</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+-->
+  <!-- Page Header class="masthead"-->
+  <header class="masthead" style="background-image: url('images/blog/crime/crime-bg.jpeg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1 style="color:white" >Theft crime prediction based on spatial and temporal crime hotpots</h1>
+            <!-- <h2 class="meta" style="color:white" >How can we predict more than one labels using BERT?</h2> -->
+						<span class="meta">Posted by Kira</span>
+						<span class="meta"> Keywords <small>Analytics, prediction modeling </small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto center-block">
+
+
+          <p>Data analysis can be applied to several business situations, such as e-commerce, retailing and advertising. However, despite those commercial values we hope
+            to conduct a report that is closely related to our daily life. Thus, Maslow's Hierarchy of Needs came to our mind --- one of the basic needs of the theory for
+            living is safety.</p>
+          <p>Crime can cause social unrest and make us in fear and it is also the most common social problem affecting the quality of life and the economic growth of a society.
+            Reducing crime is one of the efforts that are being taken seriously by the Taiwanese Government.</p>
+					<p>This study aims to find the spatial and temporal theft hotspots in Taipei city by analyzing real-world theft datasets through a statistical analysis and the utility of hotspot mapping.</p>
+
+
+          <h2 class="section-heading">Let's take a look at the dataset</h2>
+          <p>To construct our data mining model, we mainly focused on two tables. Our study is based on the theft crime in Taipei city, and we hope to find patterns of the occurrence time for a specific
+            location. To begin with, we collected several environmental factors that corresponded to each village in Taipei. As indicated in Table 1, we classified the villages
+            into different cluster based on those environmental factors before we conducted the Apriori algorithm. This step was taken to reduce the noise and to avoid excessive rules.</p>
+
+            <img class="right" src="images/blog/crime/table_1.png" style="width:600px;height:500px;">
+            <span class="caption text-muted">Table 1. Village attributes table</span>
+
+          <p>As for the Apriori analysis, we focused on the Taipei city theft crime from previous two years to current year (2015/1-2017/2). The dataset information is based on the Taipei Open Data. The original dataset gives the exact occurrence time of the crime along with the address. We extracted the village from the address and corresponded each theft crime to the village. Furthermore, we also transformed the exact occurrence time to a two hour time interval. The following table shows the crime attributes and its content values (Table 2).</p>
+
+          <img class="center" src="images/blog/crime/table_2.png" style="width:600px;height:450px;">
+          <span class="caption text-muted">Table 2. Crime attributes table</span>
+
+
+
+          <h2 class="section-heading">Methodology</h2>
+
+          <p>In this section, we explain how we prepared our datasets. After that, we provide how we analyzed the data using some statistical analysis.
+            Then, we introduce how we constructed our data-mining models to achieve our purpose.</p>
+
+          <img class="right" src="images/blog/crime/table_3.png" style="width:800px;height:350px;">
+          <span class="caption text-muted">Workflow of the crime prediction</span>
+
+          <p><strong>Data preprocessing </strong> There are few missing values in some attributes such as house price or education level of some villages. We compared to the nearby village
+            and calculated the average value to fill in the blank. Moreover, we eliminated the outliers to maintain the objectivity of the analysis. F
+            inally, we normalized every numerical value before constructing the data mining model. We also found out that some village names appeared in different character written in the tables,
+            we performed several steps to unify the village names and key attributes.</p>
+
+					<p><strong>Data analysis </strong> In the dataset, we have 456 villages and 18 features. Before conducting the clustering, we performed <strong>Random forest</strong> to select the importance features.</p>
+          <p>For each attribute in the model we permuted the attribute and calculated new model MSE according to variable permutation, then we collected the results in a list and ranked attributes’
+            importance according to the value of the percentage of increasing mean squared error (%IncMSE). The greater the value the better it is.</p>
+
+            <img class="right" src="images/blog/crime/table_4.png" style="width:600px;height:500px;">
+            <span class="caption text-muted">Attribute importance</span>
+          <p> We decided to remove number of police stations and number of parks since %IncMSE is approximately close to zero and continued the other 16 attributes to <strong>K-means clustering</strong>.</p>
+
+          <p>Mentioned above that in this dataset we have 456 villages, which is a lot. To avoid excessive disorganized rules while implementing the Apriori algorithm, we grouped the village with
+            similar environmental factors in the same cluster using K-means clustering.</p>
+
+          <p>To find the numbers of clusters in the data, we compared the mean distance between data points and their cluster centers across different values of K.
+            This method is plotted in the figure below and the “elbow point” is where the rate of decrease shifts, that can be used to roughly determine K.</p>
+
+            <img class="right" src="images/blog/crime/table_5.png" style="width:700px;height:400px;">
+            <span class="caption text-muted">The ideal number of cluster</span>
+
+         <p>Hence, we run the k-means clustering setting K=15, and calculated the average number of theft crime. The number of villages of each cluster falls between 19 and 52, and two
+           clusters have much higher theft crime than the others. Thus, we examined the k-means clustering centers for each cluster and all their attributes (See figure below),
+           each value represents the center value of the attribute for its corresponding cluster and the value scores from 0 to 1, since we conducted the normalized formula in the
+           data preprocessing section.</p>
+
+           <p>We also found out that crime attribute (number of theft crime) in cluster 6 and cluster 12 have far exceeded other cluster, hence we classified
+           those two cluster into high risk area, for those whose crime attribute is higher than average value, we categorized them into moderate risk area and the rest of the
+           clusters are referred to the low risk area. By comparing other attributes of the high-risk area, we also found out that those villages tend to have less surveillance
+           monitors, higher rate of lower-educated people and lower house price.</p>
+
+           <img class="right" src="images/blog/crime/table_6.png" style="width:700px;height:500px;">
+           <span class="caption text-muted">k-means clustering centers</span>
+
+           <p><strong>Apriori algorithm</strong Apriori is one of the basic algorithms in association rule. It is a common way for mining frequent patterns in the dataset.
+             Our goal for using this model is to find all possible crime hotspots along with its related frequent time. After conducting the k- means clustering,
+             we grouped 456 villages into 15 clusters. Then, we added an extra column for indicating the cluster behind the village column in Table 2.</p>
+          <p>Apriori algorithm has its support value, confidence value and lift. The higher the confidence value, the stronger the rule. Lift value shows that the existence of
+            the rule is not just a random occurrence while it is bigger than 1. We implemented this model using Table 2 and conducted multiple experiments using different
+            minimum support values, then we selected the optimal choice. Furthermore, we also applied constraint-based mining by restricting the extraction process on the
+            frequent patterns having this formula of three specific itemsets (Weekday, Time period and cluster). Finally, the minimum support value for our datasets was 0.001
+            and we obtained 188 absolute frequencies after the filtering criteria.</p>
+
+         <h2 class="section-heading">Result</h2>
+         <p>The goal of our study was finding spatial and temporal criminal hotspots. We achieved this goal by conducting the Apriori algorithm. Table 3 indicates that the
+           occurrence rate of the theft crime in a specific time of each cluster. For example, there’s a 9.57% chance of threat for the villages in cluster 1 to occur the
+           theft crime in Friday morning.</p>
+
+           <table width="100%">
+              <tr>
+                <th>Time</th>
+                <th>Cluster1</th>
+                <th>Cluster2</th>
+                <th>Cluster3</th>
+                <th>...</th>
+                <th>Cluster15</th>
+              </tr>
+              <tr>
+                <td>Weekly=Friday, TimePeriod=Afternoon</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0.04</td>
+                <td>...</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Weekly=Friday, TimePeriod=Morning</td>
+                <td>0.096</td>
+                <td>0.06</td>
+                <td>0</td>
+                <td>...</td>
+                <td>0.05</td>
+              </tr>
+              <tr>
+                <td>Weekly=Friday, TimePeriod=Night</td>
+                <td>0</td>
+                <td>0.06</td>
+                <td>0</td>
+                <td>...</td>
+                <td>0.05</td>
+              </tr>
+            </table>
+
+
+         <p>After obtaining the threat of each cluster in different time period, we visualized our results using Google Maps. With two pull-down menu on the top, users can
+          choose the day and the time period easily, then the map will show the corresponding color. While the brighter the color is, the higher probability will the theft
+          crime take place.</p>
+
+          <img class="right" src="images/blog/crime/table_8.png" style="width:600px;height:500px;">
+          <span class="caption text-muted">Visualization for crime prediction</span>
+
+          <p>Like to check out more details? Please click the button below</p>
+						<p ><a class="btn btn-primary btn-learn center-block" href="images/blog/crime/crime_prediction.pdf" download>Download research<i class="icon-download4"></i></a></p>
+						<br>
+						<br>
+
+					<p style="text-align:center; font-size:30px"> Go back <a class="nav-link" href="index.html" data-nav-section="blog" style="background-color: #80ced6">Home</a></p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto center-block">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright text-muted">Copyright &copy; Kira's personal website <script>document.write(new Date().getFullYear());</script></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
