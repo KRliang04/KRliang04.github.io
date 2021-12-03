@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+
     activesupport (6.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
@@ -82,7 +83,7 @@ GEM
       jekyll-theme-time-machine (= 0.1.1)
       jekyll-titles-from-headings (= 0.5.3)
       jemoji (= 0.11.1)
-      kramdown (= 2.3.0)
+      kramdown (>= 2.3.1)
       kramdown-parser-gfm (= 1.1.0)
       liquid (= 4.0.3)
       mercenary (~> 0.3)
@@ -203,6 +204,7 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    kramdown (2.3.1)
     jemoji (0.11.1)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
@@ -210,7 +212,7 @@ GEM
     kramdown (2.3.0)
       rexml
     kramdown-parser-gfm (1.1.0)
-      kramdown (~> 2.0)
+      kramdown (~> 2.3)
     liquid (4.0.3)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
